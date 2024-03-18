@@ -1,0 +1,891 @@
+﻿Program.Sub.ScreenSU.Start
+Gui.FormStatementList..Create(BaseForm)
+Gui.FormStatementList..Caption("Clock-In Questions")
+Gui.FormStatementList..Size(13950,6825)
+Gui.FormStatementList..MinX(0)
+Gui.FormStatementList..MinY(0)
+Gui.FormStatementList..Position(0,0)
+Gui.FormStatementList..BackColor(-2147483633)
+Gui.FormStatementList..MousePointer(0)
+Gui.FormStatementList..Event(UnLoad,FormStatementList_UnLoad)
+Gui.FormStatementList..AlwaysOnTop(False)
+Gui.FormStatementList..FontName("Tahoma")
+Gui.FormStatementList..FontSize(8.25)
+Gui.FormStatementList..ControlBox(True)
+Gui.FormStatementList..MaxButton(True)
+Gui.FormStatementList..MinButton(True)
+Gui.FormStatementList..Moveable(True)
+Gui.FormStatementList..Sizeable(True)
+Gui.FormStatementList..ShowInTaskBar(True)
+Gui.FormStatementList..TitleBar(True)
+Gui.FormStatementList.GSGCStatements.Create(GsGridControl)
+Gui.FormStatementList.GSGCStatements.Size(13830,5400)
+Gui.FormStatementList.GSGCStatements.Position(0,945)
+Gui.FormStatementList.GSGCStatements.Anchor(15)
+Gui.FormStatementList.GSGCStatements.Event(RowClick,GSGCStatements_RowClick)
+Gui.FormStatementList.GSGCStatements.Event(RowCellClick,GSGCStatements_RowCellClick)
+Gui.FormStatementList.GSGCStatements.Enabled(True)
+Gui.FormStatementList.GSGCStatements.Visible(True)
+Gui.FormStatementList.GSGCStatements.Zorder(0)
+Gui.FormStatementList.frame1.Create(Frame)
+Gui.FormStatementList.frame1.Size(2415,510)
+Gui.FormStatementList.frame1.Position(11415,60)
+Gui.FormStatementList.frame1.Caption("Send notification")
+Gui.FormStatementList.frame1.Anchor(9)
+Gui.FormStatementList.frame1.Enabled(True)
+Gui.FormStatementList.frame1.Visible(True)
+Gui.FormStatementList.frame1.Zorder(0)
+Gui.FormStatementList.frame1.FontName("Tahoma")
+Gui.FormStatementList.frame1.FontSize(8.25)
+Gui.FormStatementList.chkEmail.Create(CheckBox)
+Gui.FormStatementList.chkEmail.Size(825,300)
+Gui.FormStatementList.chkEmail.Position(1620,150)
+Gui.FormStatementList.chkEmail.Parent("frame1")
+Gui.FormStatementList.chkEmail.Caption("Email")
+Gui.FormStatementList.chkEmail.Event(Click,chkEmail_Click)
+Gui.FormStatementList.chkEmail.Enabled(True)
+Gui.FormStatementList.chkEmail.Visible(True)
+Gui.FormStatementList.chkEmail.Zorder(0)
+Gui.FormStatementList.chkEmail.FontName("Tahoma")
+Gui.FormStatementList.chkEmail.FontSize(8.25)
+Gui.FormStatementList.frameTemp.Create(Frame)
+Gui.FormStatementList.frameTemp.Size(3105,810)
+Gui.FormStatementList.frameTemp.Position(5850,105)
+Gui.FormStatementList.frameTemp.Caption("Settings for temperature failure")
+Gui.FormStatementList.frameTemp.Enabled(True)
+Gui.FormStatementList.frameTemp.Visible(True)
+Gui.FormStatementList.frameTemp.Zorder(0)
+Gui.FormStatementList.frameTemp.FontName("Tahoma")
+Gui.FormStatementList.frameTemp.FontSize(8.25)
+Gui.FormStatementList.cmdSettings2.Create(Button)
+Gui.FormStatementList.cmdSettings2.Size(885,375)
+Gui.FormStatementList.cmdSettings2.Position(1200,330)
+Gui.FormStatementList.cmdSettings2.Parent("frameTemp")
+Gui.FormStatementList.cmdSettings2.Caption("Email")
+Gui.FormStatementList.cmdSettings2.Event(Click,cmdSettings2_Click)
+Gui.FormStatementList.cmdSettings2.Enabled(True)
+Gui.FormStatementList.cmdSettings2.Visible(True)
+Gui.FormStatementList.cmdSettings2.Zorder(0)
+Gui.FormStatementList.cmdSettings2.FontName("Tahoma")
+Gui.FormStatementList.cmdSettings2.FontSize(8.25)
+Gui.FormStatementList.frameGUI.Create(Frame)
+Gui.FormStatementList.frameGUI.Size(2880,825)
+Gui.FormStatementList.frameGUI.Position(2805,105)
+Gui.FormStatementList.frameGUI.Caption("Settings for failed GUI questionaire")
+Gui.FormStatementList.frameGUI.Enabled(True)
+Gui.FormStatementList.frameGUI.Visible(True)
+Gui.FormStatementList.frameGUI.Zorder(0)
+Gui.FormStatementList.frameGUI.FontName("Tahoma")
+Gui.FormStatementList.frameGUI.FontSize(8.25)
+Gui.FormStatementList.cmdSettings.Create(Button)
+Gui.FormStatementList.cmdSettings.Size(885,375)
+Gui.FormStatementList.cmdSettings.Position(1035,315)
+Gui.FormStatementList.cmdSettings.Caption("Email")
+Gui.FormStatementList.cmdSettings.Event(Click,cmdSettings_Click)
+Gui.FormStatementList.cmdSettings.Parent("frameGUI")
+Gui.FormStatementList.cmdSettings.Enabled(True)
+Gui.FormStatementList.cmdSettings.Visible(True)
+Gui.FormStatementList.cmdSettings.Zorder(0)
+Gui.FormStatementList.cmdSettings.FontName("Tahoma")
+Gui.FormStatementList.cmdSettings.FontSize(8.25)
+Gui.FormStatementList.frame2.Create(Frame)
+Gui.FormStatementList.frame2.Size(2475,810)
+Gui.FormStatementList.frame2.Position(165,105)
+Gui.FormStatementList.frame2.Caption("Questionaire statements")
+Gui.FormStatementList.frame2.Enabled(True)
+Gui.FormStatementList.frame2.Visible(True)
+Gui.FormStatementList.frame2.Zorder(0)
+Gui.FormStatementList.frame2.FontName("Tahoma")
+Gui.FormStatementList.frame2.FontSize(8.25)
+Gui.FormStatementList.ButtonNew.Create(Button)
+Gui.FormStatementList.ButtonNew.Size(990,375)
+Gui.FormStatementList.ButtonNew.Position(105,315)
+Gui.FormStatementList.ButtonNew.Caption("New")
+Gui.FormStatementList.ButtonNew.Event(Click,ButtonNew_Click)
+Gui.FormStatementList.ButtonNew.Parent("frame2")
+Gui.FormStatementList.ButtonNew.Enabled(True)
+Gui.FormStatementList.ButtonNew.Visible(True)
+Gui.FormStatementList.ButtonNew.Zorder(0)
+Gui.FormStatementList.ButtonNew.FontName("Tahoma")
+Gui.FormStatementList.ButtonNew.FontSize(8.25)
+Gui.FormStatementList.ButtonModify.Create(Button)
+Gui.FormStatementList.ButtonModify.Size(990,375)
+Gui.FormStatementList.ButtonModify.Position(1245,300)
+Gui.FormStatementList.ButtonModify.Caption("Modify")
+Gui.FormStatementList.ButtonModify.Event(Click,ButtonModify_Click)
+Gui.FormStatementList.ButtonModify.Parent("frame2")
+Gui.FormStatementList.ButtonModify.Enabled(True)
+Gui.FormStatementList.ButtonModify.Visible(True)
+Gui.FormStatementList.ButtonModify.Zorder(0)
+Gui.FormStatementList.ButtonModify.FontName("Tahoma")
+Gui.FormStatementList.ButtonModify.FontSize(8.25)
+Gui.FormStatementList.chkScanner.Create(CheckBox)
+Gui.FormStatementList.chkScanner.Size(2250,300)
+Gui.FormStatementList.chkScanner.Position(11415,570)
+Gui.FormStatementList.chkScanner.Anchor(9)
+Gui.FormStatementList.chkScanner.Caption("Thermal Scanner")
+Gui.FormStatementList.chkScanner.Event(Click,chkScanner_Click)
+Gui.FormStatementList.chkScanner.Enabled(True)
+Gui.FormStatementList.chkScanner.Visible(True)
+Gui.FormStatementList.chkScanner.Zorder(0)
+Gui.FormStatementList.chkScanner.FontName("Tahoma")
+Gui.FormStatementList.chkScanner.FontSize(8.25)
+Gui.FormStatementMaintenance..Create(BaseForm)
+Gui.FormStatementMaintenance..Caption("Clock-In Statement Maintenance")
+Gui.FormStatementMaintenance..Size(8865,4665)
+Gui.FormStatementMaintenance..MinX(0)
+Gui.FormStatementMaintenance..MinY(0)
+Gui.FormStatementMaintenance..Position(0,0)
+Gui.FormStatementMaintenance..BackColor(-2147483633)
+Gui.FormStatementMaintenance..MousePointer(0)
+Gui.FormStatementMaintenance..AlwaysOnTop(True)
+Gui.FormStatementMaintenance..MaxButton(False)
+Gui.FormStatementMaintenance..MinButton(False)
+Gui.FormStatementMaintenance..Event(UnLoad,FormStatementMaintenance_UnLoad)
+Gui.FormStatementMaintenance..Sizeable(False)
+Gui.FormStatementMaintenance..FontName("Tahoma")
+Gui.FormStatementMaintenance..FontSize(8.25)
+Gui.FormStatementMaintenance..ControlBox(True)
+Gui.FormStatementMaintenance..Moveable(True)
+Gui.FormStatementMaintenance..ShowInTaskBar(True)
+Gui.FormStatementMaintenance..TitleBar(True)
+Gui.FormStatementMaintenance.labelName.Create(Label,"Name : ",True,615,255,0,60,120,True,0,"Arial",8,-2147483633,0,0)
+Gui.FormStatementMaintenance.labelName.BorderStyle(0)
+Gui.FormStatementMaintenance.textName.Create(TextBox,"",True,8565,300,0,105,330,True,0,"Arial",8,-2147483643,1)
+Gui.FormStatementMaintenance.textName.Anchor(13)
+Gui.FormStatementMaintenance.textName.MaxLength(100)
+Gui.FormStatementMaintenance.labelStatement.Create(Label,"Statement : ",True,960,255,0,60,720,True,0,"Arial",8,-2147483633,0,0)
+Gui.FormStatementMaintenance.labelStatement.BorderStyle(0)
+Gui.FormStatementMaintenance.textStatement.Create(TextboxM)
+Gui.FormStatementMaintenance.textStatement.Size(8565,2985)
+Gui.FormStatementMaintenance.textStatement.Position(105,930)
+Gui.FormStatementMaintenance.textStatement.MaxLength(500)
+Gui.FormStatementMaintenance.textStatement.Anchor(15)
+Gui.FormStatementMaintenance.textStatement.Enabled(True)
+Gui.FormStatementMaintenance.textStatement.Visible(True)
+Gui.FormStatementMaintenance.textStatement.Zorder(0)
+Gui.FormStatementMaintenance.textStatement.FontName("Tahoma")
+Gui.FormStatementMaintenance.textStatement.FontSize(8.25)
+Gui.FormStatementMaintenance.buttonsave.Create(Button)
+Gui.FormStatementMaintenance.buttonsave.Size(990,375)
+Gui.FormStatementMaintenance.buttonsave.Position(7695,3930)
+Gui.FormStatementMaintenance.buttonsave.Caption("Save")
+Gui.FormStatementMaintenance.buttonsave.Event(Click,buttonsave_Click)
+Gui.FormStatementMaintenance.buttonsave.Enabled(True)
+Gui.FormStatementMaintenance.buttonsave.Visible(True)
+Gui.FormStatementMaintenance.buttonsave.Zorder(0)
+Gui.FormStatementMaintenance.buttonsave.FontName("Tahoma")
+Gui.FormStatementMaintenance.buttonsave.FontSize(8.25)
+Gui.FormStatementMaintenance.chkActive.Create(CheckBox)
+Gui.FormStatementMaintenance.chkActive.Size(900,300)
+Gui.FormStatementMaintenance.chkActive.Position(6780,3930)
+Gui.FormStatementMaintenance.chkActive.Caption("Active")
+Gui.FormStatementMaintenance.chkActive.Event(Click,chkActive_Click)
+Gui.FormStatementMaintenance.chkActive.Enabled(True)
+Gui.FormStatementMaintenance.chkActive.Visible(True)
+Gui.FormStatementMaintenance.chkActive.Zorder(0)
+Gui.FormStatementMaintenance.chkActive.FontName("Tahoma")
+Gui.FormStatementMaintenance.chkActive.FontSize(8.25)
+Gui.FormSettings..Create(BaseForm)
+Gui.FormSettings..Caption("Email Settings")
+Gui.FormSettings..Size(5670,6795)
+Gui.FormSettings..MinX(0)
+Gui.FormSettings..MinY(0)
+Gui.FormSettings..Position(0,0)
+Gui.FormSettings..BackColor(-2147483633)
+Gui.FormSettings..MousePointer(0)
+Gui.FormSettings..Event(UnLoad,FormSettings_UnLoad)
+Gui.FormSettings..Sizeable(False)
+Gui.FormSettings..AlwaysOnTop(False)
+Gui.FormSettings..FontName("Tahoma")
+Gui.FormSettings..FontSize(8.25)
+Gui.FormSettings..ControlBox(True)
+Gui.FormSettings..MaxButton(True)
+Gui.FormSettings..MinButton(True)
+Gui.FormSettings..Moveable(True)
+Gui.FormSettings..ShowInTaskBar(True)
+Gui.FormSettings..TitleBar(True)
+Gui.FormSettings.lblWarning.Create(Label,"Email body:",True,1905,255,0,45,3225,True,0,"Arial",8,-2147483633,0,0)
+Gui.FormSettings.lblWarning.BorderStyle(0)
+Gui.FormSettings.txtWarningMessage.Create(TextboxM)
+Gui.FormSettings.txtWarningMessage.Size(5460,2520)
+Gui.FormSettings.txtWarningMessage.Position(45,3435)
+Gui.FormSettings.txtWarningMessage.Enabled(True)
+Gui.FormSettings.txtWarningMessage.Visible(True)
+Gui.FormSettings.txtWarningMessage.Zorder(0)
+Gui.FormSettings.txtWarningMessage.FontName("Tahoma")
+Gui.FormSettings.txtWarningMessage.FontSize(8.25)
+Gui.FormSettings.lblNotifyEmailFrom.Create(Label,"Notify Email From:",True,1935,255,0,15,90,True,0,"Arial",8,-2147483633,0,0)
+Gui.FormSettings.lblNotifyEmailFrom.BorderStyle(0)
+Gui.FormSettings.txtFrom.Create(TextBox,"",True,5460,300,0,30,300,True,0,"Arial",8,-2147483643,1)
+Gui.FormSettings.lblNotifyEmailTo.Create(Label,"Notify Email To (1 line per email):",True,2670,255,0,15,690,True,0,"Arial",8,-2147483633,0,0)
+Gui.FormSettings.lblNotifyEmailTo.BorderStyle(0)
+Gui.FormSettings.txtTo.Create(TextboxM)
+Gui.FormSettings.txtTo.Size(5460,2250)
+Gui.FormSettings.txtTo.Position(30,900)
+Gui.FormSettings.txtTo.Enabled(True)
+Gui.FormSettings.txtTo.Visible(True)
+Gui.FormSettings.txtTo.Zorder(0)
+Gui.FormSettings.txtTo.FontName("Tahoma")
+Gui.FormSettings.txtTo.FontSize(8.25)
+Gui.FormSettings.ddlInfo.Create(DropDownList)
+Gui.FormSettings.ddlInfo.Size(1695,330)
+Gui.FormSettings.ddlInfo.Position(1785,6030)
+Gui.FormSettings.ddlInfo.Enabled(True)
+Gui.FormSettings.ddlInfo.Visible(True)
+Gui.FormSettings.ddlInfo.Zorder(0)
+Gui.FormSettings.ddlInfo.FontName("Tahoma")
+Gui.FormSettings.ddlInfo.FontSize(8.25)
+Gui.FormSettings.lbl1.Create(Label,"Include information",True,1530,315,0,45,6105,True,0,"Arial",8,-2147483633,0,0)
+Gui.FormSettings.lbl1.BorderStyle(0)
+Gui.FormSettings.cmdCopy.Create(Button)
+Gui.FormSettings.cmdCopy.Size(1650,375)
+Gui.FormSettings.cmdCopy.Position(3675,6000)
+Gui.FormSettings.cmdCopy.Caption("Copy to clipboard")
+Gui.FormSettings.cmdCopy.Event(Click,cmdCopy_Click)
+Gui.FormSettings.cmdCopy.Enabled(True)
+Gui.FormSettings.cmdCopy.Visible(True)
+Gui.FormSettings.cmdCopy.Zorder(0)
+Gui.FormSettings.cmdCopy.FontName("Tahoma")
+Gui.FormSettings.cmdCopy.FontSize(8.25)
+Gui.FormSettings2..Create(BaseForm)
+Gui.FormSettings2..Caption("Email Settings")
+Gui.FormSettings2..Size(5670,6795)
+Gui.FormSettings2..MinX(0)
+Gui.FormSettings2..MinY(0)
+Gui.FormSettings2..Position(0,0)
+Gui.FormSettings2..BackColor(-2147483633)
+Gui.FormSettings2..MousePointer(0)
+Gui.FormSettings2..Event(UnLoad,FormSettings2_UnLoad)
+Gui.FormSettings2..Sizeable(False)
+Gui.FormSettings2..AlwaysOnTop(False)
+Gui.FormSettings2..FontName("Tahoma")
+Gui.FormSettings2..FontSize(8.25)
+Gui.FormSettings2..ControlBox(True)
+Gui.FormSettings2..MaxButton(True)
+Gui.FormSettings2..MinButton(True)
+Gui.FormSettings2..Moveable(True)
+Gui.FormSettings2..ShowInTaskBar(True)
+Gui.FormSettings2..TitleBar(True)
+Gui.FormSettings2.lblWarning.Create(Label,"Email body:",True,1905,255,0,45,3225,True,0,"Arial",8,-2147483633,0,0)
+Gui.FormSettings2.lblWarning.BorderStyle(0)
+Gui.FormSettings2.txtWarningMessage.Create(TextboxM)
+Gui.FormSettings2.txtWarningMessage.Size(5460,2520)
+Gui.FormSettings2.txtWarningMessage.Position(45,3435)
+Gui.FormSettings2.txtWarningMessage.Enabled(True)
+Gui.FormSettings2.txtWarningMessage.Visible(True)
+Gui.FormSettings2.txtWarningMessage.Zorder(0)
+Gui.FormSettings2.txtWarningMessage.FontName("Tahoma")
+Gui.FormSettings2.txtWarningMessage.FontSize(8.25)
+Gui.FormSettings2.lblNotifyEmailFrom.Create(Label,"Notify Email From:",True,1935,255,0,15,90,True,0,"Arial",8,-2147483633,0,0)
+Gui.FormSettings2.lblNotifyEmailFrom.BorderStyle(0)
+Gui.FormSettings2.txtFrom.Create(TextBox,"",True,5460,300,0,30,300,True,0,"Arial",8,-2147483643,1)
+Gui.FormSettings2.lblNotifyEmailTo.Create(Label,"Notify Email To (1 line per email):",True,2670,255,0,15,690,True,0,"Arial",8,-2147483633,0,0)
+Gui.FormSettings2.lblNotifyEmailTo.BorderStyle(0)
+Gui.FormSettings2.txtTo.Create(TextboxM)
+Gui.FormSettings2.txtTo.Size(5460,2250)
+Gui.FormSettings2.txtTo.Position(30,900)
+Gui.FormSettings2.txtTo.Enabled(True)
+Gui.FormSettings2.txtTo.Visible(True)
+Gui.FormSettings2.txtTo.Zorder(0)
+Gui.FormSettings2.txtTo.FontName("Tahoma")
+Gui.FormSettings2.txtTo.FontSize(8.25)
+Gui.FormSettings2.ddlInfo.Create(DropDownList)
+Gui.FormSettings2.ddlInfo.Size(1695,330)
+Gui.FormSettings2.ddlInfo.Position(1785,6030)
+Gui.FormSettings2.ddlInfo.Enabled(True)
+Gui.FormSettings2.ddlInfo.Visible(True)
+Gui.FormSettings2.ddlInfo.Zorder(0)
+Gui.FormSettings2.ddlInfo.FontName("Tahoma")
+Gui.FormSettings2.ddlInfo.FontSize(8.25)
+Gui.FormSettings2.lbl1.Create(Label,"Include information",True,1530,315,0,45,6105,True,0,"Arial",8,-2147483633,0,0)
+Gui.FormSettings2.lbl1.BorderStyle(0)
+Gui.FormSettings2.cmdCopy.Create(Button)
+Gui.FormSettings2.cmdCopy.Size(1650,375)
+Gui.FormSettings2.cmdCopy.Position(3675,6000)
+Gui.FormSettings2.cmdCopy.Caption("Copy to clipboard")
+Gui.FormSettings2.cmdCopy.Event(Click,cmdCopy_Click)
+Gui.FormSettings2.cmdCopy.Enabled(True)
+Gui.FormSettings2.cmdCopy.Visible(True)
+Gui.FormSettings2.cmdCopy.Zorder(0)
+Gui.FormSettings2.cmdCopy.FontName("Tahoma")
+Gui.FormSettings2.cmdCopy.FontSize(8.25)
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+V.Global.iRowSelected.Declare(Long, -1)
+V.Global.bNew.Declare(String)
+V.Global.bActive.Declare(Boolean, True)
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+'Bryan Pham
+'12/09/2020
+'This is a maintenance program for questionnaire/ emails settings
+
+v.Local.sRet.Declare
+V.Local.sError.Declare(String)
+F.Intrinsic.Control.Try
+
+F.Intrinsic.Control.CallSub(SetIcon)
+
+F.ODBC.Connection!Con.OpenCompanyConnection
+F.Intrinsic.Control.CallSub(LoadData)
+F.Intrinsic.Control.CallSub(LoadGrid)
+
+
+
+f.ODBC.Connection!Con.ExecuteAndReturn("select * from GCG_COVID_MAINT",v.Local.sRet)
+f.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+
+f.Intrinsic.Control.If(v.Local.sRet(0),=,True)
+	gui.FormStatementList.chkScanner.Value(1)
+f.Intrinsic.Control.Else
+	gui.FormStatementList.chkScanner.Value(0)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.If(v.Local.sRet(1),=,True)
+	gui.FormStatementList.chkEmail.Value(1)
+	gui.FormStatementList.cmdSettings.Enabled(true)
+	gui.FormStatementList.cmdSettings2.Enabled(true)
+f.Intrinsic.Control.Else
+	gui.FormStatementList.chkEmail.Value(0)
+	gui.FormStatementList.cmdSettings.Enabled(false)
+	gui.FormStatementList.cmdSettings2.Enabled(false)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.If(v.Screen.FormStatementList!chkScanner.Value,=,0)
+	gui.FormStatementList.frameTemp.Visible(false)
+f.Intrinsic.Control.EndIf
+
+GUI.FormStatementList..Show
+
+F.Intrinsic.Control.Catch
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+    F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.Main.End
+
+Program.Sub.LoadData.Start
+v.Local.sSQL.Declare
+v.Local.sRet.Declare
+V.Local.sError.Declare(String)
+F.Intrinsic.Control.Try
+
+'if necessary, load the data
+F.Intrinsic.Control.If(V.DataTable.tableStatements.Exists)
+	F.Data.DataTable.Close(tableStatements)
+F.Intrinsic.Control.EndIf
+F.Data.DataTable.CreateFromSQL("tableStatements", "Con", "select ID, RTRIM(STATEMENT_NAME) as Name, RTRIM(STATEMENT) as Statement, ACTIVE as Active from GCG_COVID_Statements where ID <> '9999'", True)
+'F.Data.DataTable.CreateFromSQL("tableStatements", "Con", "select ID, RTRIM(STATEMENT_NAME) as Name, RTRIM(STATEMENT) as Statement from GCG_COVID_Statements", True)
+f.Data.DataTable.AddColumn("tableStatements","Delete","string","Delete")
+
+F.Intrinsic.Control.Catch
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+    F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.LoadData.End
+
+Program.Sub.LoadGrid.Start
+V.Local.sError.Declare(String)
+F.Intrinsic.Control.Try
+
+'set up the grid
+GUI.FormStatementList.GSGCStatements.AddGridviewFromDataTable("gridStatements", "tableStatements")
+
+GUI.FormStatementList.GSGCStatements.SetColumnProperty("gridStatements", "Name", "HeaderFontBold", True)
+GUI.FormStatementList.GSGCStatements.SetColumnProperty("gridStatements", "Name", "ReadOnly", True)
+GUI.FormStatementList.GSGCStatements.SetColumnProperty("gridStatements", "Name", "AllowEdit", False)
+GUI.FormStatementList.GSGCStatements.SetColumnProperty("gridStatements", "Name", "Visible", False)
+
+GUI.FormStatementList.GSGCStatements.SetColumnProperty("gridStatements", "Statement", "HeaderFontBold", True)
+GUI.FormStatementList.GSGCStatements.SetColumnProperty("gridStatements", "Statement", "ReadOnly", True)
+GUI.FormStatementList.GSGCStatements.SetColumnProperty("gridStatements", "Statement", "AllowEdit", False)
+GUI.FormStatementList.GSGCStatements.SetColumnProperty("gridStatements", "Statement", "MinWidth", 150)
+
+GUI.FormStatementList.GSGCStatements.SetColumnProperty("gridStatements", "Active", "HeaderFontBold", True)
+GUI.FormStatementList.GSGCStatements.SetColumnProperty("gridStatements", "Active", "ReadOnly", True)
+GUI.FormStatementList.GSGCStatements.SetColumnProperty("gridStatements", "Active", "AllowEdit", False)
+GUI.FormStatementList.GSGCStatements.SetColumnProperty("gridStatements", "Active", "MaxWidth", 80)
+
+gui.FormStatementList.GSGCStatements.SetColumnProperty("gridStatements","Delete","ReadOnly",True)
+gui.FormStatementList.GSGCStatements.SetColumnProperty("gridStatements","Delete","AllowEdit",False)
+gui.FormStatementList.GSGCStatements.ColumnEdit("gridStatements","Delete","EditorButton","Delete")
+gui.FormStatementList.GSGCStatements.SetColumnProperty("gridStatements","Delete","HeaderHAlignment","Center")
+GUI.FormStatementList.GSGCStatements.SetColumnProperty("gridStatements", "Delete", "HeaderFontBold", True)
+GUI.FormStatementList.GSGCStatements.SetColumnProperty("gridStatements", "Delete", "MaxWidth", 80)
+
+
+GUI.FormStatementList.GSGCStatements.SetColumnProperty("gridStatements", "ID", "Visible", False)
+
+GUI.FormStatementList.GSGCStatements.MainView("gridStatements")
+
+F.Intrinsic.Control.Catch
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+    F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.LoadGrid.End
+
+Program.Sub.FormStatementList_UnLoad.Start
+v.Local.sSQL.Declare
+v.Local.sRet.Declare
+v.Local.iScanner.Declare
+v.Local.iEmail.Declare
+V.Local.sError.Declare(String)
+F.Intrinsic.Control.Try
+
+
+'close out
+F.Data.DataTable.Close("tableStatements")
+
+f.Intrinsic.Control.If(v.Screen.FormStatementList!chkScanner.Value,=,1)
+	v.Local.iScanner.Set(1)
+f.Intrinsic.Control.Else
+	v.Local.iScanner.Set(0)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.If(v.Screen.FormStatementList!chkEmail.Value,=,1)
+	v.Local.iEmail.Set(1)
+f.Intrinsic.Control.Else
+	v.Local.iEmail.Set(0)
+f.Intrinsic.Control.EndIf
+
+v.Local.sSQL.Set("Select * from GCG_COVID_MAINT")
+f.ODBC.Connection!Con.ExecuteAndReturn(v.Local.sSQL,v.Local.sRet)
+
+f.Intrinsic.Control.If(v.Ambient.ExecuteAndReturnEOF,=,true)
+	f.Intrinsic.String.Build("Insert into GCG_COVID_MAINT(SCANNER,EMAIL) values({0},{1})",v.Local.iScanner,v.Local.iEmail,v.Local.sSQL)
+f.Intrinsic.Control.Else
+	f.Intrinsic.String.Build("Update GCG_COVID_MAINT set SCANNER = {0}, EMAIL = {1}",v.Local.iScanner,v.Local.iEmail,v.Local.sSQL)
+f.Intrinsic.Control.EndIf
+
+f.ODBC.Connection!Con.Execute(v.Local.sSQL)
+
+F.ODBC.Connection!Con.Close
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.Catch
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+    F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.FormStatementList_UnLoad.End
+
+Program.Sub.FormStatementMaintenance_UnLoad.Start
+V.Local.sError.Declare(String)
+F.Intrinsic.Control.Try
+
+'Go back to the main screen and do some cleanup
+GUI.FormStatementMaintenance..Visible(False)
+GUI.FormStatementList..AlwaysOnTop(True)
+GUI.FormStatementList..AlwaysOnTop(False)
+GUI.FormStatementList..Enabled(True)
+GUI.FormStatementMaintenance.chkActive.Value(True)
+V.Global.bActive.Set(True)
+
+F.Intrinsic.Control.Catch
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+    F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.FormStatementMaintenance_UnLoad.End
+
+Program.Sub.buttonsave_Click.Start
+V.Local.sError.Declare(String)
+F.Intrinsic.Control.Try
+
+'if necessary, save the record
+V.Local.sSQL.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.sName.Declare(String)
+V.Local.sStatement.Declare(String)
+V.Local.sOldName.Declare(String)
+V.Local.bChanged.Declare(Boolean, False)
+V.Local.iID.Declare(Long)
+
+V.Local.sName.Set(V.Screen.FormStatementMaintenance!textName.Text.Trim)
+V.Local.sStatement.Set(V.Screen.FormStatementMaintenance!textStatement.Text.Trim)
+F.Intrinsic.Control.If(V.Global.iRowSelected, !=, -1)
+	V.Local.sOldName.Set(V.DataTable.tableStatements(V.Global.iRowSelected).Name!FieldValTrim)
+	V.Local.iID.Set(V.DataTable.tableStatements(V.Global.iRowSelected).ID!FieldValTrim)
+F.Intrinsic.Control.EndIf
+
+'If either field is blank, alert the user and do nothing
+F.Intrinsic.Control.If(V.Local.sName.PSQLFriendly, =, "", "OR", V.Local.sStatement.PSQLFriendly, =, "")
+	F.Intrinsic.UI.Msgbox("Error: The Name and Statement fields cannot be blank.")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+'If the name already exists, don't add it
+F.Intrinsic.String.Build("Name = '{0}'", V.Local.sName.PSQLFriendly, V.Local.sSQL)
+F.Data.DataTable.Select("tableStatements", V.Local.sSQL, V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet, !=, "***NORETURN***")
+	F.Intrinsic.Control.If(V.Global.iRowSelected, =, -1)
+		F.Intrinsic.UI.Msgbox("Error: A statement with this name already exists.")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.ElseIf(V.Local.sName, !=, V.Local.sOldName)
+		F.Intrinsic.UI.Msgbox("Error: A statement with this name already exists.")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+'If it's new, insert it, else update it
+F.Intrinsic.Control.If(V.Global.bNew)
+		F.Intrinsic.String.Build("Insert into GCG_COVID_Statements (STATEMENT_NAME, STATEMENT, DATE_CREATED, DATE_MODIFIED, USER_CREATED, USER_MODIFIED, ACTIVE) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')", V.Local.sName.PSQLFriendly, V.Local.sStatement.PSQLFriendly, V.Ambient.Date.FormatYYYYDDMM, V.Ambient.Date.FormatYYYYDDMM, V.Caller.User, V.Caller.User, V.Screen.FormStatementMaintenance!chkActive.Value, V.Local.sSQL)
+		'F.Intrinsic.String.Build("Insert into GCG_COVID_Statements (STATEMENT_NAME, STATEMENT, DATE_CREATED, DATE_MODIFIED, USER_CREATED, USER_MODIFIED) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')", V.Local.sName.PSQLFriendly, V.Local.sStatement.PSQLFriendly, V.Ambient.Date.FormatYYYYMMDD, V.Ambient.Date.FormatYYYYMMDD, V.Caller.User, V.Caller.User, V.Local.sSQL)
+		F.ODBC.Connection!Con.Execute(V.Local.sSQL)
+		V.Local.bChanged.Set(True)
+F.Intrinsic.Control.Else
+
+		'Only save if something has been changed
+		F.Intrinsic.Control.If(V.Local.sName, !=, V.Local.sOldName, "OR", V.Local.sStatement, !=, V.DataTable.tableStatements(V.Global.iRowSelected).Statement!FieldValtrim, V.Global.bActive, !=, V.DataTable.tableStatements(V.Global.iRowSelected).Active!FieldValTrim)
+			F.Intrinsic.String.Build("Update GCG_COVID_Statements set STATEMENT_NAME = '{0}', STATEMENT = '{1}', DATE_MODIFIED = '{2}', USER_MODIFIED = '{3}', ACTIVE = '{4}' where ID = {5}", V.Local.sName.PSQLFriendly, V.Local.sStatement.PSQLFriendly, V.Ambient.Date.FormatYYYYDDMM, V.Caller.User, V.Screen.FormStatementMaintenance!chkActive.Value, V.Local.iID, V.Local.sSQL)
+			
+		'F.Intrinsic.Control.If(V.Local.sName, !=, V.Local.sOldName, "OR", V.Local.sStatement, !=, V.DataTable.tableStatements(V.Global.iRowSelected).Statement!FieldValtrim)
+			'F.Intrinsic.String.Build("Update GCG_COVID_Statements set STATEMENT_NAME = '{0}', STATEMENT = '{1}', DATE_MODIFIED = '{2}', USER_MODIFIED = '{3}' where ID = {4}", V.Local.sName.PSQLFriendly, V.Local.sStatement.PSQLFriendly, V.Ambient.Date.FormatYYYYMMDD, V.Caller.User, V.Local.iID, V.Local.sSQL)
+			F.ODBC.Connection!Con.Execute(V.Local.sSQL)
+			V.Local.bChanged.Set(True)
+		F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+'if a change was made, refresh the data table
+F.Intrinsic.Control.If(V.Local.bChanged)
+	F.Intrinsic.Control.CallSub(LoadData)
+	F.Intrinsic.Control.CallSub(LoadGrid)
+	V.Global.iRowSelected.Set(-1)
+F.Intrinsic.Control.EndIf
+
+GUI.FormStatementMaintenance..Visible(False)
+F.Intrinsic.Control.CallSub(FormStatementMaintenance_UnLoad)
+
+F.Intrinsic.Control.Catch
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+    F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.buttonsave_Click.End
+
+Program.Sub.ButtonNew_Click.Start
+V.Local.sError.Declare(String)
+F.Intrinsic.Control.Try
+
+'clear and open the statement maintenance screen
+GUI.FormStatementList..Enabled(False)
+GUI.FormStatementMaintenance.textName.Text("")
+GUI.FormStatementMaintenance.textStatement.Text("")
+GUI.FormStatementMaintenance.chkActive.Value(True)
+V.Global.bNew.Set(True)
+GUI.FormStatementMaintenance.textName.SetFocus
+GUI.FormStatementMaintenance..Show
+
+F.Intrinsic.Control.Catch
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+    F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.ButtonNew_Click.End
+
+Program.Sub.ButtonModify_Click.Start
+V.Local.sError.Declare(String)
+F.Intrinsic.Control.Try
+
+'if a row is selected, open that row in maintenance
+F.Intrinsic.Control.If(V.Global.iRoWSelected, !=, -1)
+	GUI.FormStatementMaintenance.textName.Text(V.DataTable.tableStatements(V.Global.iRowSelected).Name!FieldValTrim)
+	GUI.FormStatementMaintenance.textStatement.Text(V.DataTable.tableStatements(V.Global.iRowSelected).Statement!FieldValtrim)
+	GUI.FormStatementMaintenance.chkActive.Value(V.DataTable.tableStatements(V.Global.iRowSelected).Active!FieldVal)
+	V.Global.bNew.Set(False)
+	GUI.FormStatementMaintenance.textName.SetFocus
+	GUI.FormStatementMaintenance..Show
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+    F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.ButtonModify_Click.End
+
+Program.Sub.ButtonDelete_Click.Start
+V.Local.sError.Declare(String)
+F.Intrinsic.Control.Try
+
+'if a row is selected, delete it
+F.Intrinsic.Control.If(V.Global.iRoWSelected, !=, -1)
+	V.Local.sSQL.Declare(String)
+	F.Intrinsic.String.Build("Delete from GCG_COVID_Statements where ID = {0}", V.DataTable.tableStatements(V.Global.iRowSelected).ID!FieldValTrim, V.Local.sSQL)
+	F.ODBC.Connection!Con.Execute(V.Local.sSQL)
+	F.Data.DataTable.DeleteRow("tableStatements", V.Global.iRowSelected)
+	V.Global.iRowSelected.Set(-1)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+    F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.ButtonDelete_Click.End
+
+Program.Sub.GSGCStatements_RowClick.Start
+F.Intrinsic.Control.Try
+
+'keeping track of the selected row, V.Args.RowIndex/Handle seems to use last one if you click one and drag
+GUI.FormStatementList.GSGCStatements.GetSelectedRows("gridStatements", V.Global.iRowSelected)
+
+F.Intrinsic.Control.Catch
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+    F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.GSGCStatements_RowClick.End
+
+Program.Sub.SetIcon.Start
+F.Intrinsic.Control.Try
+
+V.Local.sForm.Declare(String)
+V.Local.bExists.Declare(Boolean)
+V.Local.sIcon.Declare(String)
+V.Local.iCounter.Declare(Long)
+
+F.Intrinsic.String.Build("{0}\ART\gss2.ico",V.Caller.GlobalDir,v.Local.sIcon)
+F.Intrinsic.File.Exists(V.Local.sIcon, V.Local.bExists)
+F.Intrinsic.Control.If(V.Local.bExists.Not)
+	F.Intrinsic.String.Build("{0}\GAB\GAS\gss2.ico",V.Caller.PluginsDir,v.Local.sIcon)
+	F.Intrinsic.File.Exists(V.Local.sIcon, V.Local.bExists)
+	F.Intrinsic.Control.If(V.Local.bExists.Not)
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.UI.GetFormList(V.Local.sForm)
+F.Intrinsic.String.Split(V.Local.sForm, "*!*", V.Local.sForm)
+
+F.Intrinsic.Control.For(V.Local.iCounter, 0, V.Local.sForm.UBound, 1)
+	Gui.[V.Local.sForm(V.Local.iCounter)]..Icon(V.Local.sIcon)
+F.Intrinsic.Control.Next(V.Local.iCounter)
+
+F.Intrinsic.Control.Catch
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+    F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.SetIcon.End
+
+Program.Sub.chkActive_Click.Start
+'Keeping track of active flag as boolean instead of checkbox 1 or 0 value
+'V.Global.bActive.Set(V.Global.bActive.Not)
+V.Global.bActive.Set(V.Screen.FormStatementMaintenance!chkActive.CheckedAsBoolean)
+Program.Sub.chkActive_Click.End
+
+Program.Sub.cmdSettings_Click.Start
+F.Intrinsic.Control.CallSub(LoadSettings)
+GUI.FormStatementList..Enabled(False)
+gui.FormSettings.ddlInfo.AddItem("Employee Number")
+gui.FormSettings.ddlInfo.AddItem("Employee Name")
+GUI.FormSettings..Show
+GUI.FormSettings..SetFocus
+Program.Sub.cmdSettings_Click.End
+
+Program.Sub.FormSettings_UnLoad.Start
+v.Local.sSQL.Declare
+V.Local.sError.Declare(String)
+F.Intrinsic.Control.Try
+
+F.Intrinsic.Control.CallSub(SaveSettings)
+
+GUI.FormSettings..Visible(False)
+GUI.FormStatementList..Enabled(True)
+GUI.FormStatementList..Visible(True)
+GUI.FormStatementList..SetFocus
+F.Intrinsic.Control.Catch
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+    F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.FormSettings_UnLoad.End
+
+Program.Sub.SaveSettings.Start
+V.Local.sPath.Declare(String)
+V.Local.sContents.Declare(String)
+
+'Email
+F.Intrinsic.String.Build("{0}{1}{2}{1}{3}{1}{4}", V.Screen.FormSettings!txtWarningMessage.text.Trim, "!@#$#@!", V.Screen.FormSettings!txtFrom.Text.Trim, V.Screen.FormSettings!txtTo.text.Trim,v.Screen.FormSettings!ddlInfo.Value,V.Local.sContents)
+
+F.Intrinsic.String.Build("{0}\Custom\COVID\{1}\Settings", V.Caller.GlobalDir, V.Caller.CompanyCode, V.Local.sPath)
+F.Intrinsic.Control.CallSub(CheckDirectories, "Directories", V.Local.sPath)
+
+F.Intrinsic.String.Build("{0}\Covid_Statement_Settings_Email.txt", V.Local.sPath, V.Local.sPath)
+F.Intrinsic.File.String2File(V.Local.sPath, V.Local.sContents)
+
+
+'Email2
+F.Intrinsic.String.Build("{0}{1}{2}{1}{3}{1}{4}", V.Screen.FormSettings2!txtWarningMessage.text.Trim, "!@#$#@!", V.Screen.FormSettings2!txtFrom.Text.Trim, V.Screen.FormSettings2!txtTo.text.Trim,v.Screen.FormSettings2!ddlInfo.Value,V.Local.sContents)
+
+F.Intrinsic.String.Build("{0}\Custom\COVID\{1}\Settings", V.Caller.GlobalDir, V.Caller.CompanyCode, V.Local.sPath)
+F.Intrinsic.Control.CallSub(CheckDirectories, "Directories", V.Local.sPath)
+
+F.Intrinsic.String.Build("{0}\Covid_Statement_Settings_Email_SCANNER.txt", V.Local.sPath, V.Local.sPath)
+F.Intrinsic.File.String2File(V.Local.sPath, V.Local.sContents)
+
+
+Program.Sub.SaveSettings.End
+
+Program.Sub.LoadSettings.Start
+V.Local.sPath.Declare(String)
+V.Local.sContents.Declare(String)
+V.Local.bExists.Declare(Boolean, False)
+
+'Emails
+F.Intrinsic.String.Build("{0}\Custom\COVID\{1}\Settings\Covid_Statement_Settings_Email.txt", V.Caller.GlobalDir, V.Caller.CompanyCode, V.Local.sPath)
+F.Intrinsic.File.Exists(V.Local.sPath, V.Local.bExists)
+F.Intrinsic.Control.If(V.Local.bExists)
+	F.Intrinsic.File.File2String(V.Local.sPath, V.Local.sContents)
+	F.Intrinsic.String.Split(V.Local.sContents, "!@#$#@!", V.Local.sContents)
+	GUI.FormSettings.txtWarningMessage.Text(V.Local.sContents(0))
+	GUI.FormSettings.txtFrom.Text(V.Local.sContents(1))
+	GUI.FormSettings.txtTo.Text(V.Local.sContents(2))
+F.Intrinsic.Control.EndIf
+
+'Emails
+
+F.Intrinsic.String.Build("{0}\Custom\COVID\{1}\Settings\Covid_Statement_Settings_Email_SCANNER.txt", V.Caller.GlobalDir, V.Caller.CompanyCode, V.Local.sPath)
+F.Intrinsic.File.Exists(V.Local.sPath, V.Local.bExists)
+F.Intrinsic.Control.If(V.Local.bExists)
+	F.Intrinsic.File.File2String(V.Local.sPath, V.Local.sContents)
+	F.Intrinsic.String.Split(V.Local.sContents, "!@#$#@!", V.Local.sContents)
+	GUI.FormSettings2.txtWarningMessage.Text(V.Local.sContents(0))
+	GUI.FormSettings2.txtFrom.Text(V.Local.sContents(1))
+	GUI.FormSettings2.txtTo.Text(V.Local.sContents(2))
+F.Intrinsic.Control.EndIf
+
+Program.Sub.LoadSettings.End
+
+Program.Sub.CheckDirectories.Start
+'check if the given import directories exist
+'create them if they don't
+'pass directories delimited with *!*
+
+V.Local.sDirectories.Declare(String)
+V.Local.sPath.Declare(String)
+V.Local.bExists.Declare(Boolean)
+V.Local.iCounter.Declare(Long)
+
+V.Local.sDirectories.Set(V.Args.Directories)
+F.Intrinsic.String.Split(V.Local.sDirectories, "*!*", V.Local.sDirectories)
+
+F.Intrinsic.Control.For(V.Local.iCounter, 0, V.Local.sDirectories.UBound, 1)
+	V.Local.sPath.Set(V.Local.sDirectories(V.Local.iCounter))
+	F.Intrinsic.File.DirExists(V.Local.sPath, V.Local.bExists)
+	F.Intrinsic.Control.If(V.Local.bExists.Not)
+		F.Intrinsic.File.CreateDir(V.Local.sPath)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iCounter)
+Program.Sub.CheckDirectories.End
+
+Program.Sub.GSGCStatements_RowCellClick.Start
+v.Local.sSQL.Declare
+v.Local.sID.Declare
+'V.Local.sError.Declare
+f.Intrinsic.Control.Try
+	v.Local..BulkDeclareString(sError)
+	
+	f.Intrinsic.Control.If(v.Args.Column,=,"Delete")
+		f.Intrinsic.UI.InvokeWaitDialog("Deleting...")
+	
+		gui.FormStatementList.GSGCStatements.GetCellValueByColumnName("gridStatements","ID",v.Args.RowIndex,v.Local.sID)
+		f.Intrinsic.String.Build("Delete from GCG_COVID_Statements where ID = {0}",v.Local.sID,v.Local.sSQL)
+		f.ODBC.Connection!Con.Execute(v.Local.sSQL)
+		f.Data.DataTable.DeleteRow("tableStatements",v.Args.RowIndex)
+		f.Data.DataTable.AcceptChanges("tableStatements")
+		f.Intrinsic.UI.CloseWaitDialog		
+	f.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+    F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.GSGCStatements_RowCellClick.End
+
+Program.Sub.cmdCopy_Click.Start
+V.Local.sError.Declare(String)
+V.Local.sTemp.Declare(String)
+F.Intrinsic.Control.Try
+
+'copy the wild card to the clipboard
+
+'Emails
+V.Local.sTemp.Set(V.Screen.FormSettings!ddlInfo.Value.Trim)
+F.Intrinsic.Control.If(V.Local.sTemp, !=, "")
+	F.Intrinsic.String.Build("<<<{0}>>>", V.Local.sTemp, V.Local.sTemp)
+	F.Intrinsic.UI.SetClipboardText(V.Local.sTemp)
+F.Intrinsic.Control.EndIf
+
+'Emails
+V.Local.sTemp.Set(V.Screen.FormSettings2!ddlInfo.Value.Trim)
+F.Intrinsic.Control.If(V.Local.sTemp, !=, "")
+	F.Intrinsic.String.Build("<<<{0}>>>", V.Local.sTemp, V.Local.sTemp)
+	F.Intrinsic.UI.SetClipboardText(V.Local.sTemp)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+    F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+
+Program.Sub.cmdCopy_Click.End
+
+Program.Sub.chkEmail_Click.Start
+f.Intrinsic.Control.If(v.Screen.FormStatementList!chkEmail.Value,=,1)
+	gui.FormStatementList.cmdSettings.Enabled(true)
+	gui.FormStatementList.cmdSettings2.Enabled(true)
+f.Intrinsic.Control.Else
+	gui.FormStatementList.cmdSettings.Enabled(false)
+	gui.FormStatementList.cmdSettings2.Enabled(false)
+f.Intrinsic.Control.EndIf
+Program.Sub.chkEmail_Click.End
+
+Program.Sub.cmdSettings2_Click.Start
+F.Intrinsic.Control.CallSub(LoadSettings)
+GUI.FormStatementList..Enabled(False)
+gui.FormSettings2.ddlInfo.AddItem("Employee Number")
+gui.FormSettings2.ddlInfo.AddItem("Employee Name")
+GUI.FormSettings2..Show
+GUI.FormSettings2..SetFocus
+Program.Sub.cmdSettings2_Click.End
+
+Program.Sub.FormSettings2_UnLoad.Start
+v.Local.sSQL.Declare
+V.Local.sError.Declare(String)
+F.Intrinsic.Control.Try
+
+F.Intrinsic.Control.CallSub(SaveSettings)
+
+GUI.FormSettings..Visible(False)
+GUI.FormStatementList..Enabled(True)
+GUI.FormStatementList..Visible(True)
+GUI.FormStatementList..SetFocus
+F.Intrinsic.Control.Catch
+    F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+    F.Intrinsic.UI.Msgbox(V.Local.sError)
+    F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.FormSettings2_UnLoad.End
+
+Program.Sub.chkScanner_Click.Start
+f.Intrinsic.Control.If(v.Screen.FormStatementList!chkScanner.Value,=,0)
+	gui.FormStatementList.frameTemp.Visible(false)
+f.Intrinsic.Control.Else
+	gui.FormStatementList.frameTemp.Visible(true)
+f.Intrinsic.Control.EndIf
+Program.Sub.chkScanner_Click.End
+
+Program.Sub.Comments.Start
+${$5$}$2.0.0.0$}$2
+${$6$}$wnichols$}$20210607153007300$}$h3jCD/nJ6bE/cd0Fx7GbYZBAEscRS8LBO2yOYISFOEm3oZhm5/6veopMa0cV7MJKtYDR/Yi6JnzPa0WmpCrg0w==
+Program.Sub.Comments.End
