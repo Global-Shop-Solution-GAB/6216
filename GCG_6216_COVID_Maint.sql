@@ -1,0 +1,12 @@
+-- Database: GLOBALPLA Metadata version: 2 Exported: Dec 9, 2020
+-- Begin Tables
+SET LEGACYTYPESALLOWED = ON;
+-- Begin Multi-Line Statement
+CREATE TABLE "GCG_COVID_MAINT" USING 'GCG_COVID_MAINT.mkd' PAGESIZE=4096 (
+ "SCANNER" BIT NOT NULL,
+ "EMAIL" BIT NOT NULL,
+ "TEXT" BIT NOT NULL,
+ "TEAMS" BIT NOT NULL );
+-- End Multi-Line Statement
+SET LEGACYTYPESALLOWED = OFF;
+-- End Tables
