@@ -1,0 +1,13 @@
+-- Database: GLOBALPLA Metadata version: 2 Exported: Dec 9, 2020
+-- Begin Tables
+SET LEGACYTYPESALLOWED = ON;
+-- Begin Multi-Line Statement
+CREATE TABLE "GCG_COVID_FAILED_SCAN_LOG" USING 'GCG_COVID_FAILED_SCAN_LOG.mkd' PAGESIZE=4096 (
+ "DATE" DATE,
+ "EMPLOYEE" CHAR(6),
+ "SKIN_TEMP" NUMERIC(8,2),
+ "BODY_TEMP" NUMERIC(8,2),
+ "THRESHOLD" NUMERIC(8,2) );
+-- End Multi-Line Statement
+SET LEGACYTYPESALLOWED = OFF;
+-- End Tables
